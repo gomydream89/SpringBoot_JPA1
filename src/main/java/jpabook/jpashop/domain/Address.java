@@ -15,6 +15,7 @@ public class Address {
 
     }
 
+    //생성할때만 값 설정 immutable
     public Address(String city, String street, String zipcode) {
         this.city = city;
         this.street = street;
