@@ -16,6 +16,7 @@ import java.util.List;
 @Setter
 public abstract class Item {
     @Id
+    @GeneratedValue
     @Column(name = "item_id")
     private Long id;
 
