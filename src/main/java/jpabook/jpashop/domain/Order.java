@@ -75,7 +75,7 @@ public class Order {
      * 의 비즈니스 로직을 처리하는 것을 트랜잭션 스크립트 패턴(http://martinfowler.com/eaaCatalog/
      * transactionScript.html)이라 한다.
      */
-    public void cancle(){
+    public void cancel(){
         if (delivery.getStatus() == DeliveryStatus.COMP) {
             throw new IllegalStateException("이미 배송된 상품은 취소가 불가능합니다.");
         }

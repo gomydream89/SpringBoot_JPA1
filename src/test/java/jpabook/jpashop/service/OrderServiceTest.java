@@ -82,7 +82,7 @@ public class OrderServiceTest {
         Long orderId = orderService.order(member.getId(), item.getId(), orderCount);
 
         //when
-        orderService.orderCancle(orderId);
+        orderService.orderCancel(orderId);
 
 
         //then
